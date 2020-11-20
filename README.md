@@ -8,4 +8,5 @@ Problems are taken from:
 3. SPOJ
 4. codechef.com
 
+[Link for the solved problems](https://docs.google.com/spreadsheets/d/1quSbzlXTKP3gEbqsvnNVr3CSdVTFvenQCQlbpFpK7l0/edit#gid=0)
 Goal is to be in the top 10 of competitive programming contests.
