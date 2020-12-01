@@ -27,3 +27,28 @@ public:
     }
 };
  */
+
+// solved with bfs = 12 ms
+// error was (int i = 0; i < q.size(); i++) which is logically wrong, because in loop i pop the element reducing the size
+
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        queue<TreeNode*> ans;
+        int max =0;
+        if (root== NULL) return max;
+        ans.push(root);
+        
+        while(!ans.empty()) {
+            max++;
+            int len = ans.size();
+            for (int i = 0; i < len; i++) {
+                TreeNode* frontt = ans.front();
+                ans.pop();
+                if (frontt->left != NULL) ans.push(frontt->left);
+                if (frontt->right != NULL) ans.push(frontt->right);
+            }
+        }
+        return max;
+    }
+};
