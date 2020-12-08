@@ -1,6 +1,6 @@
 # solved_problems
 
-So we made promise to solve 2 problems everyday. This repository is for that purpose. Enjoy!
+So we made promise to solve at least 1 problem everyday. This repository is for that purpose. 
 
 Problems are taken from:
 1. leetcode.com
