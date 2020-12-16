@@ -14,3 +14,22 @@ public:
         return ans;
     }
 }; */
+
+//tried to copy the left side of trianlge, still TLE
+//maybe recursion is not good for this type of problem
+/*class Solution {
+public:
+    vector<int> getRow(int rowIndex) {
+        vector<int> ans;
+        for (int i= 0; i <= rowIndex; i++) {
+            if (i==0 || i == rowIndex) ans.push_back(1);
+            else { 
+            if (i> rowIndex/2) {
+                ans.push_back((ans[rowIndex-i])%100009);
+            } else
+                ans.push_back((getRow(rowIndex-1)[i])%100009 + (getRow(rowIndex-1)[i-1])%100009); }
+        }
+        return ans;
+    }
+};
+*/
