@@ -20,6 +20,7 @@ bool almostIncreasingSequence(vector<int> sequence) {
     else return true;
 } */
 // O(n^2)
+// I looked for solution in youtube from Harrian
 bool strictlyIncreasingSequence(vector<int> sequence){
     for (int i = 0; i < sequence.size()-1; i++) {
         if (sequence[i] >= sequence[i+1]) return false;
