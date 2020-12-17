@@ -19,3 +19,25 @@ bool almostIncreasingSequence(vector<int> sequence) {
     if (count > 1) return false;
     else return true;
 } */
+// O(n^2)
+bool strictlyIncreasingSequence(vector<int> sequence){
+    for (int i = 0; i < sequence.size()-1; i++) {
+        if (sequence[i] >= sequence[i+1]) return false;
+    }
+    return true;
+}
+
+bool almostIncreasingSequence(vector<int> sequence) {
+    int begin;
+    for (int i = 0; i < sequence.size() -1; i++) {
+        if (sequence[i] >= sequence[i+1]) {begin = i; break;}
+        
+    }
+    int temp;
+    for(int i = begin; i < sequence.size(); i++) {
+        temp = sequence[i]; sequence.erase(sequence.begin()+i); 
+        if (strictlyIncreasingSequence(sequence)) return true;
+         sequence.insert(sequence.begin()+i, temp);
+    }
+    return false;
+}
