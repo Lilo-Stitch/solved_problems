@@ -9,4 +9,4 @@ Problems are taken from:
 4. codechef.com
 5. codesignal.com
 
-Here are the [link to algorithms](https://docs.google.com/document/d/1U_d78V0lFzlG5tCKOMC-iA9ywdNim3XkLpnzJDC_qx4/edit?usp=sharing) pseudocodes that we learned throughout problem solving. Enjoy!
+Enjoy!
