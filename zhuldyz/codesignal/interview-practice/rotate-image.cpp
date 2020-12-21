@@ -1,5 +1,7 @@
 // In-place rotation to 90 degrees to right
 // O(n^2)
+//divide and conquer
+
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
@@ -17,6 +19,25 @@ public:
                 matrix[j][r-1-i] = temp;
 
             }
+        }
+    }
+};
+
+// firstly transpose matrix then mirror it
+//also O(n^2)
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) {
+        int n = matrix.size();
+        
+        for(int i = 0; i < n; ++i){
+            for(int j = i; j < n; ++j){
+                swap(matrix[i][j], matrix[j][i]);
+            }
+        }
+        
+        for(int i = 0; i < n; ++i){
+            reverse(matrix[i].begin(), matrix[i].end());
         }
     }
 };
