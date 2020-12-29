@@ -39,3 +39,5 @@ public:
         return ans;
     }
 };
+//here the speed is slow only 36 ms
+// but the memory is 97% better than others, because i do not create new array;
