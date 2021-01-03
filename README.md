@@ -1,4 +1,4 @@
-# solved_problems
+# Solved Problems
 
 So we made promise to solve at least 1 problem everyday. This repository is for that purpose. 
 
